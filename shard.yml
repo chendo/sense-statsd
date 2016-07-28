@@ -1,0 +1,14 @@
+name: sense
+version: 0.1.0
+
+authors:
+  - Jack Chen (chendo) <github@chen.do>
+
+license: MIT
+
+dependencies:
+  sense-api:
+    github: chendo/sense-api.cr
+  statsd:
+    github: miketheman/statsd.cr
+    branch: master
