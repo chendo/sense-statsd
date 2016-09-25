@@ -4,7 +4,7 @@ require "statsd"
 
 module Sense
   class Stats
-    def initialize(email : String, password : String, statsd_host : String = "172.16.8.4")
+    def initialize(email : String, password : String, statsd_host : String = "localhost")
       @client = Sense::API.new(email: email, password: password)
       @statsd = Statsd::Client.new(statsd_host)
     end
@@ -37,4 +37,4 @@ module Sense
   end
 end
 
-Sense::Stats.new(email: ENV["SENSE_EMAIL"], password: ENV["SENSE_PASSWORD"]).run
+Sense::Stats.new(email: ENV["SENSE_EMAIL"], password: ENV["SENSE_PASSWORD"], statsd_host: ENV.fetch("STATSD_HOST", "localhost")).run
