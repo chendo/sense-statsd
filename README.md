@@ -1,26 +1,18 @@
-# sense
+# Sense Statsd
 
-TODO: Write a description here
+Takes data from your Hello Sense sensors and publishes them to a dogstatsd endpoint.
 
-## Installation
-
-
-TODO: Write installation instructions here
-
+Currently hardcoded to emit to the `room:bedroom` tag. Just a side project, expect no support or movement.
 
 ## Usage
 
-
-
-TODO: Write usage instructions here
-
-## Development
-
-TODO: Write development instructions here
+```
+docker run --restart=unless-stopped -e SENSE_EMAIL=<email> SENSE_PASSWORD=<password> chendo/sense-statsd
+```
 
 ## Contributing
 
-1. Fork it ( https://github.com/[your-github-name]/sense/fork )
+1. Fork it ( https://github.com/chendo/sense/fork )
 2. Create your feature branch (git checkout -b my-new-feature)
 3. Commit your changes (git commit -am 'Add some feature')
 4. Push to the branch (git push origin my-new-feature)
@@ -28,4 +20,4 @@ TODO: Write development instructions here
 
 ## Contributors
 
-- [[your-github-name]](https://github.com/[your-github-name]) Jack Chen (chendo) - creator, maintainer
+- [chendo](https://github.com/chendo) Jack Chen (chendo) - creator, maintainer
