@@ -11,4 +11,3 @@ dependencies:
     github: chendo/sense-api.cr
   statsd:
     github: miketheman/statsd.cr
-    branch: master

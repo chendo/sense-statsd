@@ -1,6 +1,6 @@
 require "./sense/*"
-require "sense-api"
-require "statsd"
+require "../libs/statsd"
+require "../libs/sense-api"
 
 module Sense
   class Stats

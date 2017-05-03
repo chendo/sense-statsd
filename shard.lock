@@ -2,13 +2,13 @@ version: 1.0
 shards:
   cossack:
     github: greyblake/crystal-cossack
-    version: 0.1.2
+    version: 0.1.4
 
   sense-api:
     github: chendo/sense-api.cr
-    commit: b76b7eafea8f5e330c83152f771235ddb53068b2
+    commit: 4a3c15521f5561e3117d6d1af09a5026d75707a5
 
   statsd:
     github: miketheman/statsd.cr
-    commit: 5b446bf0a5bb15ad7a13be5ed91aabce2a6cc41c
+    version: 0.1.0
 
