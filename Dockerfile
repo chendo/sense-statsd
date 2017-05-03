@@ -1,4 +1,4 @@
-FROM crystallang/crystal:0.20.1
+FROM crystallang/crystal:0.22.0
 MAINTAINER Ian Blenke <ian@blenke.com>
 
 # This is an example Dockerized Crystal Kemal project
